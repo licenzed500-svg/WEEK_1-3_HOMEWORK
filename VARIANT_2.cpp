@@ -1,4 +1,4 @@
-//Вариант 2
+//Вариант 2 Типы данных и формулы
 
 #include <iostream>
 #include <string>
