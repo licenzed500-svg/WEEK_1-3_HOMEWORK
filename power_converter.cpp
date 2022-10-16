@@ -7,6 +7,23 @@
 #include <iostream>
 #include <cmath>
 
+struct converts_from_gcal_to_dzh
+	{
+		short gcal_per_minute = 1;
+		float dzh_per_hour = 6.98 * pow(10,7);
+	};
+	struct converts_from_gcal_to_ccal
+	{
+		short gcal_per_minute = 1;
+		long ccal_per_hour = 277000;
+	};
+	struct converts_from_gcal_to_erg
+	{
+		short gcal_per_minute = 1;
+		long erg_per_second = 11630000000000;
+	};
+
+
 void menu_out()
 {
 	std::cout << "-------------------------\n";
@@ -35,22 +52,7 @@ short __action()
 
 void __program()
 {
-	struct converts_from_gcal_to_dzh
-	{
-		short gcal_per_minute = 1;
-		float dzh_per_hour = 6.98 * pow(10,7);
-	};
-	struct converts_from_gcal_to_ccal
-	{
-		short gcal_per_minute = 1;
-		long ccal_per_hour = 277000;
-	};
-	struct converts_from_gcal_to_erg
-	{
-		short gcal_per_minute = 1;
-		long erg_per_second = 11630000000000;
-	};
-
+	
 	converts_from_gcal_to_dzh gcal_to_dzh;
 	converts_from_gcal_to_ccal gcal_to_ccal;
 	converts_from_gcal_to_erg gcal_to_erg;
