@@ -22,7 +22,7 @@ data calculate_k(data user_data)
 
 data calculate_a(data user_data)
 {
-	user_data.a = ((pow(M_E, tan(M_PI * user_data.k))) - log(abs(user_data.x)))/ user_data.k * user_data.x + pow(10, 5);
+	user_data.a = (exp(M_PI*tan(user_data.k))) - log(abs(user_data.x)))/ user_data.k * user_data.x + pow(10, 5);
 	return user_data;
 }
 
