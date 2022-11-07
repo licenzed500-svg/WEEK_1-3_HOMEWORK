@@ -23,7 +23,7 @@ data calculate_b(data my_data)
 
 data calculate_a(data my_data)
 {
-	my_data.a = pow(M_E, my_data.b - 1) + pow(tan(my_data.x), 2);
+	my_data.a = exp(my_data.b-1) + pow(tan(my_data.x), 2);
 	return my_data;
 }
 
