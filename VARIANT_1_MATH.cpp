@@ -25,7 +25,7 @@ data calculate_z(data user_data)
 
 data calculate_y(data user_data)
 {
-	user_data.y = ((pow(M_E, user_data.a*(-1)) + ((user_data.z + pow(10, 3)))) / (sin(user_data.z))) / cos(M_PI) * user_data.z + log(user_data.b);
+	user_data.y = (exp(user_data.a*(-1))) + ((user_data.z + pow(10, 3)))) / (sin(user_data.z))) / cos(M_PI) * user_data.z + log(user_data.b);
 	return user_data;
 }
 
